@@ -1,0 +1,11 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportAttributeAccessIssue": "none",
+    "reportCallIssue": "none"
+  },
+  "python.analysis.stubPath": "./typings",
+  "files.associations": {
+    "*.py": "python"
+  }
+}
