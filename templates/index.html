@@ -1,0 +1,42 @@
+<html>
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Chat em Tempo Real</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"
+   </head>
+   <body>
+      <div class="login-container" id="loginContainer">
+         <div class="login-form">
+            <h2>Entrar no Chat</h2>
+            <input type="text" id="usernameInput" placeholder="Digite seu nome" maxlength="20">
+            <br>
+            <button onclick="joinChat()">Entrar</button>
+         </div>
+      </div>
+
+      <div class="chat-container" id="chatContainer" style="display: none;">
+         <div class="chat-header">
+            <h1>Chat em Tempo Real</h1>
+            <div class="user-count" id="userCount">0 usuários online</div>
+         </div>
+
+         <div class="messages-container" id="messagesContainer">
+            <!--AS MENSAGENS VÃO SER EXIBIDAS AQUI-->
+         </div>
+
+         <div class="typing-indicator" id="typingIndicator"></div>
+
+         <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Digitte sua mensagem..." maxlength="500" disabled>
+            <button id="sendButton" onclick="sendMessage()" disabled>Enviar</button>
+         </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.4/socket.io.js"></script>
+      <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+   </body>
+</html>
