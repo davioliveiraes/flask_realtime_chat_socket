@@ -111,7 +111,7 @@ def handle_typing(data: Dict[str, Any]) -> None:
    """Evento disparado quando um usuaŕio está digitando"""
    session_id = request.sid
    sender = next(
-      (user for user in usuarios_conectados if user["id"] != session_id), None
+      (user for user in usuarios_conectados if user["id"] == session_id), None
    )
 
    if sender:
