@@ -1,55 +1,92 @@
-# 💬 Chat em Tempo Real - Flask SocketIO
+# Chat em Tempo Real - Flask + SocketIO
 
-Chat simples em Python onde várias pessoas podem conversar ao mesmo tempo no navegador.
+Um sistema de chat em tempo real desenvolvido com Flask e Flask-SocketIO.
 
-## 📦 Instalação
+## 🎥 Demonstração
 
-```bash
-# Clone o projeto
-git clone https://github.com/davioliveiraes/flask-realtime-chat.git
-cd flask-realtime-chat
+Confira o sistema funcionando no vídeo demonstrativo:
 
-# Crie ambiente virtual
-python -m venv venv
+**[▶️ Assistir demonstração no YouTube](https://www.youtube.com/watch?v=v2QHpNBSwJU)**
 
-# Ative o ambiente
-# Linux/Mac: source venv/bin/activate
-# Windows: venv\Scripts\activate
+## 🚀 Funcionalidades
 
-# Instale dependências
-pip install -r requirements.txt
+- ✅ Chat em tempo real entre múltiplos usuários
+- ✅ Notificações de entrada e saída de usuários
+- ✅ Indicador de "está digitando"
+- ✅ Contador de usuários online
+- ✅ Interface responsiva
+- ✅ Mensagens com timestamp
+- ✅ Sistema de login simples
+- ✅ Escape de HTML para segurança
+
+## 📋 Pré-requisitos
+
+- Python 3.7+
+- pip (gerenciador de pacotes Python)
+
+## 🔧 Instalação
+
+1. **Clone ou baixe o projeto**
+   ```bash
+   git clone https://github.com/davioliveiraes/flask-realtime-chat.git
+   cd flask-realtime-chat
+   ```
+
+2. **Crie um ambiente virtual (recomendado)**
+   ```bash
+   python -m venv venv
+   
+   # No Windows
+   venv\Scripts\activate
+   
+   # No Linux/Mac
+   source venv/bin/activate
+   ```
+
+3. **Instale as dependências**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## 🏃‍♂️ Como Executar
+
+1. **Execute o servidor**
+   ```bash
+   python app.py
+   ```
+
+2. **Acesse o chat**
+   - Abra seu navegador
+   - Vá para: `http://localhost:3000`
+   - Digite seu nome e comece a conversar!
+
+3. **Teste com múltiplos usuários**
+   - Abra várias abas do navegador
+   - Use diferentes nomes em cada aba
+   - Veja o chat funcionando em tempo real
+
+## 📁 Estrutura do Projeto
+
 ```
-
-## ▶️ Como usar
-
-```bash
-# Execute o servidor
-python app.py
-
-# Abra no navegador
-http://localhost:3000
-```
-
-Para testar: abra várias abas do navegador, entre com nomes diferentes e converse!
-
-## 📁 Estrutura
-
-```
-├── app.py              # Servidor
-├── requirements.txt    # Dependências
+chat-tempo-real/
+│
+├── app.py                 # Servidor Flask principal
+├── requirements.txt       # Dependências do projeto
+├── README.md             # Este arquivo
+│
 ├── templates/
-│   └── index.html     # Página HTML
+│   └── index.html        # Interface HTML do chat
+│
 └── static/
     ├── css/
-    │   └── style.css  # Estilos
+    │   └── style.css     # Estilos CSS
     └── js/
-        └── chat.js    # JavaScript
+        └── chat.js       # Lógica JavaScript do frontend
 ```
 
-## 🛠 Tecnologias
+## 🛠️ Tecnologias Utilizadas
 
-- Python + Flask + SocketIO (backend)
-- HTML + CSS + JavaScript (frontend)
-- WebSockets para comunicação em tempo real
-
-**Dica:** Use `CTRL+C` para parar o servidor.
+- **Flask**: Framework web Python
+- **Flask-SocketIO**: Extensão para WebSockets
+- **Socket.IO**: Biblioteca JavaScript para comunicação em tempo real
+- **HTML/CSS/JavaScript**: Interface frontend
