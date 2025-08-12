@@ -6,7 +6,7 @@ Um sistema de chat em tempo real desenvolvido com Flask e Flask-SocketIO.
 
 Confira o sistema funcionando no vídeo demonstrativo:
 
-**[▶️ Assistir demonstração no YouTube](https://www.youtube.com/watch?v=v2QHpNBSwJU)**
+**[▶️ Assistir demonstração no YouTube](https://www.youtube.com/watch?v=0E17ZHDz8cw)**
 
 ## 🚀 Funcionalidades
 
